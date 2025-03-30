@@ -42,6 +42,7 @@ jobs:
             az version
             az account show
             az group create -n $RESOURCE_GROUP -l westeurope
+      
       - name: Preview Changes from Bicep
         uses: Azure/deployment-what-if-action@v1.0.0
         with:
@@ -51,13 +52,6 @@ jobs:
           # parametersFile: # optional # Parameters file for the ARM template or Bicep
           # Additional parameters to be applied on the ARM template or Bicep. Multiple parameters should be separated by spaces.
           additionalParameters: webAppName=$WEBAPP_NAME # optional
-        - name: Preview changes
-    uses: Azure/deployment-what-if-action@v1.0.0
-    with:
-      subscription: ${{ secrets.SUBSCRIPTION_ID }}
-      resourceGroup: '<resource group name>'
-      templateFile: azuredeploy.json # main.bicep
-      parametersFile: parameters.json    
           
   deploy-azure-bicep-dev:
     environment: Development
