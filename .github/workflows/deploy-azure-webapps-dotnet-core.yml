@@ -27,6 +27,7 @@ env:
 on:
   push:
     branches: [ "main" ]
+    paths: 03-app-dotnet
   workflow_dispatch:
 
 permissions:
