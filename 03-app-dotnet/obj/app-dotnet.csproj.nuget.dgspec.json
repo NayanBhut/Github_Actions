@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nayan.bhut/Downloads/github-actions-course-main/03-app-dotnet/app-dotnet.csproj": {}
+    "/Users/nayan.bhut/Desktop/Nayan Codes/Pipelines/GitHub/Github_Action_Dot_Net/03-app-dotnet/app-dotnet.csproj": {}
   },
   "projects": {
-    "/Users/nayan.bhut/Downloads/github-actions-course-main/03-app-dotnet/app-dotnet.csproj": {
+    "/Users/nayan.bhut/Desktop/Nayan Codes/Pipelines/GitHub/Github_Action_Dot_Net/03-app-dotnet/app-dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nayan.bhut/Downloads/github-actions-course-main/03-app-dotnet/app-dotnet.csproj",
+        "projectUniqueName": "/Users/nayan.bhut/Desktop/Nayan Codes/Pipelines/GitHub/Github_Action_Dot_Net/03-app-dotnet/app-dotnet.csproj",
         "projectName": "app-dotnet",
-        "projectPath": "/Users/nayan.bhut/Downloads/github-actions-course-main/03-app-dotnet/app-dotnet.csproj",
+        "projectPath": "/Users/nayan.bhut/Desktop/Nayan Codes/Pipelines/GitHub/Github_Action_Dot_Net/03-app-dotnet/app-dotnet.csproj",
         "packagesPath": "/Users/nayan.bhut/.nuget/packages/",
-        "outputPath": "/Users/nayan.bhut/Downloads/github-actions-course-main/03-app-dotnet/obj/",
+        "outputPath": "/Users/nayan.bhut/Desktop/Nayan Codes/Pipelines/GitHub/Github_Action_Dot_Net/03-app-dotnet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nayan.bhut/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +41,8 @@
         "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",
@@ -54,20 +54,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -76,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
