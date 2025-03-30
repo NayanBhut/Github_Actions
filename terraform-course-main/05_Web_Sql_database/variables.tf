@@ -37,3 +37,8 @@ variable "sql_admin_password" {
   type        = string
   description = "SQL Server password name in Azure"
 }
+
+variable "subscription_id" {
+  type = string
+  description = "Azure subscription ID"
+}
