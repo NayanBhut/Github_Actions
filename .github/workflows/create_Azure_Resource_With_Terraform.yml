@@ -65,6 +65,9 @@ jobs:
       with:
         # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
         creds: ${{ secrets.AZURE_CREDENTIALS }}
+        clientId: ${{ secrets.AZURE_CLIENT_ID }}
+        clientSecret: ${{ secrets.ARM_CLIENT_SECRET }}
+        tenantId: ${{ secrets.AZURE_TENANT_ID }}
 
     - name: Login to Azure with Service Principal
       uses: azure/login@v1.1
