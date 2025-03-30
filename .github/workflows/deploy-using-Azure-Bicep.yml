@@ -85,6 +85,6 @@ jobs:
         with:
           subscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.RESOURCE_GROUP }}
-          template: 01-bicep-webapp/webapp-linux.bicep
+          template: azure-bicep-course-main/01-bicep-webapp/webapp-linux.bicep
           parameters: webAppName=${{ env.WEBAPP_NAME }}
           failOnStdErr: false
