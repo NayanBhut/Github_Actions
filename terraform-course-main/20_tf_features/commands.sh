@@ -15,7 +15,7 @@ terraform validate
 terraform plan -out tfplan -var rg_name="myRG" -var location="easteurope" 
 
 # should display the 4 resources to be created
-terraform plan -out tfplan -var rg_name="rg-main-app" -var location="westeurope"
+terraform plan -out tfplan -var rg_name="rg-main-app" -var location="canadacentral"
 
 # show the tfplan file
 terraform show -json tfplan

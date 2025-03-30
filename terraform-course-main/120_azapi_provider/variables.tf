@@ -1,6 +1,6 @@
 variable "resources_location" {
   type    = string
-  default = "westeurope"
+  default = "canadacentral"
 }
 
 variable "rg_aks_cluster" {

@@ -1,6 +1,6 @@
 # resource "azurerm_resource_group" "rg" {
 #   name     = "rg-logic-app-demo"
-#   location = "westeurope"
+#   location = "canadacentral"
 # }
 
 # resource "azurerm_logic_app_workflow" "logic_app_email_sender" {
@@ -19,7 +19,7 @@
 #       outlook = {
 #         connectionId   = "${azurerm_api_connection.api_connection_outlook.id}"
 #         connectionName = "outlook"
-#         id             = "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/providers/Microsoft.Web/locations/westeurope/managedApis/outlook"
+#         id             = "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/providers/Microsoft.Web/locations/canadacentral/managedApis/outlook"
 #       }
 #     })
 #   }
@@ -29,7 +29,7 @@
 #   #       "outlook": {
 #   #           "connectionId": "${azurerm_api_connection.api_connection_outlook.id}",
 #   #           "connectionName": "outlook",
-#   #           "id": "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/providers/Microsoft.Web/locations/westeurope/managedApis/outlook"
+#   #           "id": "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/providers/Microsoft.Web/locations/canadacentral/managedApis/outlook"
 #   #       }
 #   #     }
 #   #     CONNECTIONS
@@ -53,7 +53,7 @@
 #   #     #         "outlook": {
 #   #     #             "connectionId": "${azurerm_api_connection.api_connection_outlook.id}",
 #   #     #             "connectionName": "${azurerm_api_connection.api_connection_outlook.name}",
-#   #     #             "id": "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/providers/Microsoft.Web/locations/westeurope/managedApis/outlook"
+#   #     #             "id": "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/providers/Microsoft.Web/locations/canadacentral/managedApis/outlook"
 #   #     #         }
 #   #     #     }
 #   #     # CONNECTIONS

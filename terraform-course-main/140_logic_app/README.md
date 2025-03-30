@@ -85,7 +85,7 @@ resource "azurerm_resource_group_template_deployment" "logic_app" {
             "type": "Microsoft.Logic/workflows",
             "apiVersion": "2017-07-01",
             "name": "[parameters('workflows_logic_app_name')]",
-            "location": "westeurope",
+            "location": "canadacentral",
             "properties": {
                 "state": "Enabled",
                 "definition": {

@@ -31,7 +31,7 @@ That will generate a ``generated.tf` file with the terraform configuration, like
 ```hcl
 # __generated__ by Terraform from "/subscriptions/xxx/resourceGroups/rg-terraform"
 resource "azurerm_resource_group" "main" {
-  location   = "westeurope"
+  location   = "canadacentral"
   managed_by = null
   name       = "rg-terraform"
   tags       = {}
@@ -75,7 +75,7 @@ resource "azurerm_key_vault" "main" {
   enabled_for_deployment          = false
   enabled_for_disk_encryption     = false
   enabled_for_template_deployment = false
-  location                        = "westeurope"
+  location                        = "canadacentral"
   name                            = "kv12357913tf01"
   public_network_access_enabled   = true
   purge_protection_enabled        = false

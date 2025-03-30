@@ -10,7 +10,7 @@ trigger:
 
 variables:
   resourceGroupName: 'rg-bicep-demo-0017'
-  location: 'westeurope'
+  location: 'canadacentral'
   webAppName: 'bicep0017'
   templateFile: '01-bicep-webapp/webapp-linux.bicep'
 

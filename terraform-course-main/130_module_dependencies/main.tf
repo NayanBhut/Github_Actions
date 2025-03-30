@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
   name     = "rg-prod"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 module "keyvault" {

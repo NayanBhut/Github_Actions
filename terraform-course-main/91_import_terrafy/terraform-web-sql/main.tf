@@ -1,6 +1,6 @@
 resource "azurerm_app_service_plan" "res-2" {
   kind                = "linux"
-  location            = "westeurope"
+  location            = "canadacentral"
   name                = "appserviceplan-web-21"
   reserved            = true
   resource_group_name = "rg-terraform-web-sql-db"
@@ -13,7 +13,7 @@ resource "azurerm_app_service_plan" "res-2" {
   ]
 }
 resource "azurerm_sql_database" "res-12" {
-  location            = "westeurope"
+  location            = "canadacentral"
   name                = "ProductsDB"
   resource_group_name = "rg-terraform-web-sql-db"
   server_name         = "terraform-sqlserver-021"
@@ -37,7 +37,7 @@ resource "azurerm_app_service_custom_hostname_binding" "res-36" {
   ]
 }
 resource "azurerm_resource_group" "res-54" {
-  location = "westeurope"
+  location = "canadacentral"
   name     = "rg-terraform-web-sql-db"
   tags = {
     environment = "preproduction"

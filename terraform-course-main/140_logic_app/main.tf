@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
   name     = "rg-logic-app-demo"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 data "azurerm_managed_api" "managed_api_outlook" {

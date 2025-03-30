@@ -14,7 +14,7 @@ variable "is_production" {
 
 variable "allowed_locations" {
   type    = list(string)
-  default = ["westeurope", "eastus", "westus"]
+  default = ["canadacentral", "eastus", "westus"]
 }
 
 variable "custom_tags" {
@@ -50,11 +50,11 @@ variable "rg_name" {
 variable "location" {
   type        = string
   description = "Location of resources"
-  default     = "westeurope"
+  default     = "canadacentral"
 
   validation {
-    condition = (anytrue([for l in ["eastus", "westeurope"] : l == var.location]))
-    # condition   = contains(["eastus", "westeurope"], lower(var.location))
-    error_message = "The region should be eastus or westeurope."
+    condition = (anytrue([for l in ["eastus", "canadacentral"] : l == var.location]))
+    # condition   = contains(["eastus", "canadacentral"], lower(var.location))
+    error_message = "The region should be eastus or canadacentral."
   }
 }

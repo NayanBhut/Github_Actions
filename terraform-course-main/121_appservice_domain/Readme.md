@@ -99,7 +99,7 @@ But still you can just use Azure portal or command line.
 Make sure you fill the `contact_info.json` file. It is required to create domain name.
 
 ```powershell
-az group create -n rg-dns-domain -l westeurope -o table
+az group create -n rg-dns-domain -l canadacentral -o table
 
 az appservice domain create `
    --resource-group rg-dns-domain `

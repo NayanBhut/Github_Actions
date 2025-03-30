@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
   name     = "MyResourceGroup"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 # New supported resource type

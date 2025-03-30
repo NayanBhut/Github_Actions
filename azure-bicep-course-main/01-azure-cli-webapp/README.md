@@ -22,7 +22,7 @@ In this lab, we will deploy an Azure resource using the CLI.
 
 ```bash
 # create a resource group
-az group create -n rg-azure-cli-webapp -l westeurope
+az group create -n rg-azure-cli-webapp -l canadacentral
 # create an app service plan
 az appservice plan create --name azure-cli-plan \
    --resource-group rg-azure-cli-webapp \

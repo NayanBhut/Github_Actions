@@ -3,7 +3,7 @@
 
 # __generated__ by Terraform from "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/resourceGroups/rg-terraform"
 resource "azurerm_resource_group" "main" {
-  location   = "westeurope"
+  location   = "canadacentral"
   managed_by = null
   name       = "rg-terraform"
   tags       = {}
@@ -14,7 +14,7 @@ resource "azurerm_container_app_environment" "main" {
   dapr_application_insights_connection_string = null # sensitive
   infrastructure_subnet_id                    = null
   internal_load_balancer_enabled              = false
-  location                                    = "westeurope"
+  location                                    = "canadacentral"
   log_analytics_workspace_id                  = null
   name                                        = "containerapp-terraform"
   resource_group_name                         = "rg-terraform"
@@ -27,7 +27,7 @@ resource "azurerm_app_service_plan" "main" {
   app_service_environment_id   = null
   is_xenon                     = false
   kind                         = "linux"
-  location                     = "westeurope"
+  location                     = "canadacentral"
   maximum_elastic_worker_count = 1
   name                         = "asp-terraform"
   per_site_scaling             = false
@@ -48,7 +48,7 @@ resource "azurerm_virtual_machine" "main" {
   delete_data_disks_on_termination = null
   delete_os_disk_on_termination    = null
   license_type                     = null
-  location                         = "westeurope"
+  location                         = "canadacentral"
   name                             = "vm-terraform"
   network_interface_ids            = ["/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/resourceGroups/rg-terraform/providers/Microsoft.Network/networkInterfaces/vm-terraformVMNic"]
   primary_network_interface_id     = null
@@ -123,7 +123,7 @@ resource "azurerm_app_service" "main" {
   enabled                         = true
   https_only                      = false
   key_vault_reference_identity_id = "SystemAssigned"
-  location                        = "westeurope"
+  location                        = "canadacentral"
   name                            = "webapp-terraform"
   resource_group_name             = "rg-terraform"
   tags                            = {}
@@ -244,7 +244,7 @@ resource "azurerm_key_vault" "main" {
   enabled_for_deployment          = false
   enabled_for_disk_encryption     = false
   enabled_for_template_deployment = false
-  location                        = "westeurope"
+  location                        = "canadacentral"
   name                            = "kv12357913tf01"
   public_network_access_enabled   = true
   purge_protection_enabled        = false
@@ -275,10 +275,10 @@ resource "azurerm_kubernetes_cluster" "main" {
   image_cleaner_interval_hours        = null
   kubernetes_version                  = "1.26.6"
   local_account_disabled              = false
-  location                            = "westeurope"
+  location                            = "canadacentral"
   name                                = "aks-terraform"
   node_os_channel_upgrade             = null
-  node_resource_group                 = "MC_rg-terraform_aks-terraform_westeurope"
+  node_resource_group                 = "MC_rg-terraform_aks-terraform_canadacentral"
   oidc_issuer_enabled                 = false
   open_service_mesh_enabled           = null
   private_cluster_enabled             = false
@@ -333,7 +333,7 @@ resource "azurerm_kubernetes_cluster" "main" {
   kubelet_identity {
     client_id                 = "52ae7539-062d-43a3-a4a0-4669ceab5ba0"
     object_id                 = "d96aee84-1e72-4d77-92d5-c6bddfea0f3b"
-    user_assigned_identity_id = "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/resourceGroups/MC_rg-terraform_aks-terraform_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-terraform-agentpool"
+    user_assigned_identity_id = "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/resourceGroups/MC_rg-terraform_aks-terraform_canadacentral/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-terraform-agentpool"
   }
   linux_profile {
     admin_username = "azureuser"

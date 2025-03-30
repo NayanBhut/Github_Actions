@@ -1,5 +1,5 @@
 # Assume we have an existing Resource Group
-az group create -n rg-demo -l westeurope
+az group create -n rg-demo -l canadacentral
 
 # initialize terraform Azure modules
 terraform init
@@ -11,7 +11,7 @@ terraform plan -out tfplan
 #   # azurerm_resource_group.rg will be created
 #   + resource "azurerm_resource_group" "rg" {
 #       + id       = (known after apply)
-#       + location = "westeurope"
+#       + location = "canadacentral"
 #       + name     = "rg-demo"
 #     }
 

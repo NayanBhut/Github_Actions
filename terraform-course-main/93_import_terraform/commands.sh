@@ -1,17 +1,17 @@
 # create resource group
-$rg_id=$(az group create --name rg-terraform --location westeurope --query id --output tsv)
+$rg_id=$(az group create --name rg-terraform --location canadacentral --query id --output tsv)
 
 # create storage account
-$storage_account_id=(az storage account create --name tfsa123579 --resource-group rg-terraform --location westeurope --sku Standard_LRS --query id --output tsv)
+$storage_account_id=(az storage account create --name tfsa123579 --resource-group rg-terraform --location canadacentral --sku Standard_LRS --query id --output tsv)
 
 # create container
 $container_id=(az storage container create --name tfstate --account-name tfsa123579 --auth-mode login --query id --output tsv)
 
 # create function app
-$function_id=(az functionapp create --resource-group rg-terraform --consumption-plan-location westeurope --name functionapp-terraform --storage-account tfsa123579 --runtime node --query id --output tsv)
+$function_id=(az functionapp create --resource-group rg-terraform --consumption-plan-location canadacentral --name functionapp-terraform --storage-account tfsa123579 --runtime node --query id --output tsv)
 
 # create key vault
-$keyvault_id=(az keyvault create --resource-group rg-terraform --name kv12357913tf01 --location westeurope --query id --output tsv)
+$keyvault_id=(az keyvault create --resource-group rg-terraform --name kv12357913tf01 --location canadacentral --query id --output tsv)
 
 # create key vault secret
 $keyvault_secret_id=(az keyvault secret set --vault-name kv12357913tf --name terraform-backend-key --value "terraform-backend-key" --query id --output tsv)
@@ -26,7 +26,7 @@ $appservice_plan_id=(az appservice plan create --resource-group rg-terraform --n
 $appservice_id=(az webapp create --resource-group rg-terraform --plan asp-terraform --name webapp-terraform --runtime "java:11:JavaSE:11" --query id --output tsv)
 
 # create container app environment
-$containerapp_environment_id=(az containerapp env create --resource-group rg-terraform --name containerapp-terraform --location westeurope --query id --output tsv)
+$containerapp_environment_id=(az containerapp env create --resource-group rg-terraform --name containerapp-terraform --location canadacentral --query id --output tsv)
 
 # create container app
 $containerapp_id=(az containerapp create --resource-group rg-terraform --name containerapp-terraform --environment containerapp-terraform --cpu 0.25 --memory 0.5 --image nginx --query id --output tsv)

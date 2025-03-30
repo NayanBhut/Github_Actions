@@ -1,6 +1,6 @@
 # demo for importing existing infrastructure into Terraform configuration files
 # create an Azure Resource Group and a Storage Account
-az group create -g myResourceGroup -l westeurope
+az group create -g myResourceGroup -l canadacentral
 az storage account create -g myResourceGroup -n tfsademo01
 
 # in main.tf we created the tf resource for the resource group & storage account

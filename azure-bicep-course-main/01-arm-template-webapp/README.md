@@ -7,7 +7,7 @@ Prerequisites: you need to have the following:
 
 ```bash
 # create resource group
-az group create --name rg-arm-webapp-011 --location westeurope
+az group create --name rg-arm-webapp-011 --location canadacentral
 
 # preview changes
 az deployment group what-if --resource-group rg-arm-webapp-011 \

@@ -25,7 +25,7 @@ It just depends on a resource group at the root configuration.
 ```hcl
 resource "azurerm_resource_group" "rg" {
   name     = "rg-prod"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 module "keyvault" {

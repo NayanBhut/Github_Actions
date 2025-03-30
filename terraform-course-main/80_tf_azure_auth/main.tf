@@ -18,13 +18,13 @@ terraform {
 
 resource "azurerm_resource_group" "rg" {
   name     = "spn_terraform_rg"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 resource "azurerm_storage_account" "storage" {
   name                     = "terraform0spn1storage"
   resource_group_name      = azurerm_resource_group.rg.name
-  location                 = "westeurope"
+  location                 = "canadacentral"
   account_tier             = "Standard"
   account_replication_type = "LRS"
   allow_blob_public_access = true

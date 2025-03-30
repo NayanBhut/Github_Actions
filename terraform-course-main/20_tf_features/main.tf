@@ -24,7 +24,7 @@ resource "azurerm_resource_group" "demo02_rg" {
   for_each = {
     dev  = "eastus"
     test = "westus2"
-    prod = "westeurope"
+    prod = "canadacentral"
   }
   name     = each.key
   location = each.value
@@ -37,7 +37,7 @@ resource "azurerm_resource_group" "demo02_rg" {
 resource "azurerm_resource_group" "demo03_rg" {
   count    = 3
   name     = "app-${count.index}"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 #------------------------------------------------------
@@ -52,7 +52,7 @@ variable "apps_names" {
 resource "azurerm_resource_group" "demo04_rg" {
   count    = length(var.apps_names)
   name     = var.apps_names[count.index]
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 #------------------------------------------------------
@@ -61,7 +61,7 @@ resource "azurerm_resource_group" "demo04_rg" {
 
 resource "azurerm_resource_group" "demo05_rg" {
   name     = "dev-rg"
-  location = var.location != "" ? var.location : "westeurope"
+  location = var.location != "" ? var.location : "canadacentral"
 }
 
 # managed_disk_type = var.environment == "Dev" ? "Standard_LRS" : "Premium_LRS"
@@ -175,13 +175,13 @@ variable "resource_enabled" {
 # resource "azurerm_resource_group" "rg_tf_enabled_resource" {
 #   enabled  = var.resource_enabled # this attribute doesn't exist
 #   name     = "rg_tf_enabled_resource"
-#   location = "westeurope"
+#   location = "canadacentral"
 # }
 
 resource "azurerm_resource_group" "rg_tf_enabled_resource_for_each" {
   for_each = var.resource_enabled ? toset(["any_value"]) : toset([])
   name     = "rg_tf_enabled_resource"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 output "rg_id_for_each" {
@@ -191,7 +191,7 @@ output "rg_id_for_each" {
 resource "azurerm_resource_group" "rg_tf_enabled_resource_count" {
   count    = var.resource_enabled ? 1 : 0
   name     = "rg_tf_enabled_resource"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 output "rg_id_count" {
@@ -205,7 +205,7 @@ output "rg_id_count" {
 resource "azurerm_storage_account" "storage_tf_enabled_resource_for_inner_block" {
   name                     = "storage091"
   resource_group_name      = azurerm_resource_group.rg_tf_enabled_resource_for_each["any_value"].name
-  location                 = "westeurope"
+  location                 = "canadacentral"
   account_tier             = "Standard"
   account_replication_type = "LRS"
 

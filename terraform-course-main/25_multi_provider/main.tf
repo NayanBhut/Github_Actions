@@ -1,7 +1,7 @@
 resource "azurerm_resource_group" "rg_hub" {
   provider = azurerm.subscription_hub
   name     = "rg_hub"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 resource "azurerm_resource_group" "rg_spoke" {
@@ -14,7 +14,7 @@ resource "azurerm_virtual_network" "vnet_hub" {
   provider            = azurerm.subscription_hub
   name                = "vnet_hub"
   resource_group_name = azurerm_resource_group.rg_hub.name
-  location            = "westeurope"
+  location            = "canadacentral"
   address_space       = ["10.1.0.0/16"]
 }
 

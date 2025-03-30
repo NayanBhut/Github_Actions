@@ -1,5 +1,5 @@
 resource_group_name  = "rg_aks_terraform"
-location             = "westeurope"
+location             = "canadacentral"
 cluster_name         = "aks-cluster"
 kubernetes_version   = "1.23.5"
 system_node_count    = 2

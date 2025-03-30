@@ -8,7 +8,7 @@ variable "node_resource_group" {
 }
 
 variable "resource_group_location" {
-  default     = "westeurope"
+  default     = "canadacentral"
   description = "Location of the resource group."
 }
 

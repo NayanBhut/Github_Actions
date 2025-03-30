@@ -28,7 +28,7 @@ terraform plan -out tfplan
 #   # azurerm_resource_group.rg will be created
 #   + resource "azurerm_resource_group" "rg" {
 #       + id       = (known after apply)
-#       + location = "westeurope"
+#       + location = "canadacentral"
 #       + name     = "rg-vnet"
 #     }
 
@@ -40,7 +40,7 @@ terraform plan -out tfplan
 #       + dns_servers         = (known after apply)
 #       + guid                = (known after apply)
 #       + id                  = (known after apply)
-#       + location            = "westeurope"
+#       + location            = "canadacentral"
 #       + name                = "vnet-c-1"
 #       + resource_group_name = "rg-vnet"
 #       + subnet              = (known after apply)
@@ -54,7 +54,7 @@ terraform plan -out tfplan
 #       + dns_servers         = (known after apply)
 #       + guid                = (known after apply)
 #       + id                  = (known after apply)
-#       + location            = "westeurope"
+#       + location            = "canadacentral"
 #       + name                = "vnet-c-2"
 #       + resource_group_name = "rg-vnet"
 #       + subnet              = (known after apply)
@@ -68,7 +68,7 @@ terraform plan -out tfplan
 #       + dns_servers         = (known after apply)
 #       + guid                = (known after apply)
 #       + id                  = (known after apply)
-#       + location            = "westeurope"
+#       + location            = "canadacentral"
 #       + name                = "vnet-f-1"
 #       + resource_group_name = "rg-vnet"
 #       + subnet              = (known after apply)
@@ -82,7 +82,7 @@ terraform plan -out tfplan
 #       + dns_servers         = (known after apply)
 #       + guid                = (known after apply)
 #       + id                  = (known after apply)
-#       + location            = "westeurope"
+#       + location            = "canadacentral"
 #       + name                = "vnet-f-2"
 #       + resource_group_name = "rg-vnet"
 #       + subnet              = (known after apply)
@@ -133,7 +133,7 @@ terraform plan -out tfplan
 #       - flow_timeout_in_minutes = 0 -> null
 #       - guid                    = "34dbb121-0d30-4745-9159-19e531bf584e" -> null
 #       - id                      = "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/resourceGroups/rg-vnet/providers/Microsoft.Network/virtualNetworks/vnet-c-2" -> null
-#       - location                = "westeurope" -> null
+#       - location                = "canadacentral" -> null
 #       - name                    = "vnet-c-2" -> null
 #       - resource_group_name     = "rg-vnet" -> null
 #       - subnet                  = [] -> null
@@ -150,7 +150,7 @@ terraform plan -out tfplan
 #       - flow_timeout_in_minutes = 0 -> null
 #       - guid                    = "b03988e2-1ab9-4577-a165-0f12afeabefb" -> null
 #       - id                      = "/subscriptions/82f6d75e-85f4-434a-ab74-5dddd9fa8910/resourceGroups/rg-vnet/providers/Microsoft.Network/virtualNetworks/vnet-f-1" -> null
-#       - location                = "westeurope" -> null
+#       - location                = "canadacentral" -> null
 #       - name                    = "vnet-f-1" -> null
 #       - resource_group_name     = "rg-vnet" -> null
 #       - subnet                  = [] -> null

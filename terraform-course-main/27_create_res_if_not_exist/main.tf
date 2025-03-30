@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
   name     = "rg-demo"
-  location = "westeurope"
+  location = "canadacentral"
 }
 
 data "azurerm_virtual_network" "vnet" {

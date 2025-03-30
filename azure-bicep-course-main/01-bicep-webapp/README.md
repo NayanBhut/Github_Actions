@@ -2,7 +2,7 @@
 
 ```bash
 # create resource group
-az group create --name rg-bicep-webapp-013 --location westeurope
+az group create --name rg-bicep-webapp-013 --location canadacentral
 
 # preview changes
 az deployment group what-if --resource-group rg-bicep-webapp-013 \

@@ -4,7 +4,7 @@ CONTAINER_NAME=tfstate
 BLOB_NAME=terraform.tfstate
 
 # Create resource group
-az group create --name $RESOURCE_GROUP_NAME --location westeurope
+az group create --name $RESOURCE_GROUP_NAME --location canadacentral
 
 # Create storage account
 az storage account create --name $STORAGE_ACCOUNT_NAME \
