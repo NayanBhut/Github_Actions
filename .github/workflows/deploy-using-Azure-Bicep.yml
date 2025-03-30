@@ -34,6 +34,7 @@ jobs:
 
       - name: Create Azure Resource Group
         uses: azure/cli@v2
+        if: false
         with:
           # Azure CLI version to be used to execute the script. If not provided, latest version is used
           # azcliversion: 2.34.1 # optional, default is agentazcliversion
