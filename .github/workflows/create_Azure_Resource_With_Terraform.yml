@@ -9,7 +9,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   
-env:
+env: # Updated param name for dynamic data to solve Azure Error.
   STORAGE_ACCOUNT_NAME: storagetfstate013
   RESOURCE_GROUP_NAME: rg-terraform-state
   CONTAINER_NAME: tfstate
@@ -46,6 +46,7 @@ jobs:
     name: Deploy to Azure with Terraform
     runs-on: ubuntu-latest
     environment: production
+    permissions: write-all
     needs: [scan-terraform-config]
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
