@@ -47,7 +47,7 @@ output "azurerm_latest_version" {
 #----------------------------------------------------------------
 
 data "azurerm_kubernetes_service_versions" "current" {
-  location        = "West Europe"
+  location        = "Canada Central"
   include_preview = true
 }
 

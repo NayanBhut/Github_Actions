@@ -115,7 +115,7 @@ output "demo08_random_id" {
 
 resource "azurerm_resource_group" "demo07_rg" {
   name     = "demo07_rg"
-  location = "West Europe"
+  location = "Canada Central"
 }
 
 locals {

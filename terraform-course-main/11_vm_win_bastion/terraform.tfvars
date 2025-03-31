@@ -1,5 +1,5 @@
 resource_group_name    = "vm_terraform_rg"
-location               = "West Europe"
+location               = "Canada Central"
 virtual_network_name   = "vnetprod"
 subnet_name            = "subnetprod"
 public_ip_name         = "publicipprod"

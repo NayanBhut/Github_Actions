@@ -34,7 +34,7 @@ PARAMETERS
 
 resource "azurerm_resource_group" "policy" {
   name     = "test-resources"
-  location = "West Europe"
+  location = "Canada Central"
 }
 
 resource "azurerm_policy_assignment" "policy" {
@@ -53,7 +53,7 @@ METADATA
   parameters = <<PARAMETERS
 {
   "allowedLocations": {
-    "value": [ "West Europe" ]
+    "value": [ "Canada Central" ]
   }
 }
 PARAMETERS

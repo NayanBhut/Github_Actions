@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
   name     = "my-resources"
-  location = "West Europe"
+  location = "Canada Central"
 }
 
 module "vnet" {

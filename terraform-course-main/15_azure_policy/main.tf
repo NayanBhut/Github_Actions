@@ -12,7 +12,7 @@ resource "azurerm_policy_assignment" "policy" {
   parameters = <<PARAMETERS
 {
   "listOfAllowedLocations": {
-    "value": [ "West Europe" ]
+    "value": [ "Canada Central" ]
   }
 }
 PARAMETERS
