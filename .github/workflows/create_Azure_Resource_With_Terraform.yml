@@ -46,6 +46,7 @@ jobs:
     name: Deploy to Azure with Terraform
     runs-on: ubuntu-latest
     environment: production
+    permissions: write-all
     needs: [scan-terraform-config]
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
