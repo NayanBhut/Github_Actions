@@ -5,10 +5,13 @@ on:
     branches: none #[ main ]
   workflow_dispatch:
 
-name: Run Azure Login With a Service Principal Secret
+name: Run Azure Login With a Service Principal Secret and OIDC
+
+permissions:
+        id-token: write
+        contents: read
 
 jobs:
-
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
