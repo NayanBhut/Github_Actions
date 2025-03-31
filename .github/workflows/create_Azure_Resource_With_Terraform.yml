@@ -3,7 +3,7 @@ name: 'Create Azure Resourse with Terraform Config'
 on:
   push:
     branches: [ main ]
-    paths: .github/workflows/create_AWS_Resource_With_Terraform.yml
+    paths: .github/workflows/create_Azure_Resource_With_Terraform.yml
   pull_request:
     branches:  [ main ]
   # Allows you to run this workflow manually from the Actions tab
