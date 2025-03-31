@@ -65,6 +65,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Create Terraform backend state storage
+      if : false
       uses: Azure/cli@v1.0.6
       with:
         # Azure CLI version to be used to execute the script. If not provided, latest version is used
