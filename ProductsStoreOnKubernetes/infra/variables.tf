@@ -71,7 +71,7 @@ variable "access_key" {
   type        = string
 }
 
-variable "storage_name" {
+variable "storage_name_test" {
   description = "The Storage Account Name"
   type        = string
 }
