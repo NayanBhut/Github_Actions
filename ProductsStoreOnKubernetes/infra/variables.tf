@@ -65,3 +65,18 @@ variable "client_secret" {
   description = "The Client Secret for Azure"
   type        = string
 }
+
+variable "access_key" {
+  description = "The Access Key for the Storage Account"
+  type        = string
+}
+
+variable "storage_name" {
+  description = "The Storage Account Name"
+  type        = string
+}
+
+variable "appContainerName" {
+  description = "The App Container Name"
+  type        = string
+}
