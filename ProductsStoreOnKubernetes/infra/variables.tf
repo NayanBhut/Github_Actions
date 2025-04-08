@@ -60,3 +60,8 @@ variable "client_id" {
   description = "The Client ID for Azure"
   type        = string
 }
+
+variable "client_secret" {
+  description = "The Client Secret for Azure"
+  type        = string
+}
